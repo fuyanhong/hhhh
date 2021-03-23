@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			你输入的是：{{userNum}}
+			  <input v-model="userNum">
+		</div>
+		
+		
+		<script>
+			new Vue({
+				el:"#app",
+				data(){
+						
+					return{
+						userNum:'30'
+					}
+				},
+			})
+		</script>
+	</body>
+</html>
